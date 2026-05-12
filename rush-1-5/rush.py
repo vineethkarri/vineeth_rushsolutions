@@ -1,15 +1,5 @@
 import sys
-
-
 def rush(x, y):
-    """
-    Display a square pattern based on x (width) and y (height).
-
-    Top-left and bottom-right corners use 'A'.
-    Top-right and bottom-left corners use 'C'.
-    All edges use 'B'.
-    Interior cells are spaces.
-    """
     if x <= 0 or y <= 0:
         print("Invalid size", file=sys.stderr)
         return
